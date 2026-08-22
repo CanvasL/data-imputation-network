@@ -1,0 +1,10 @@
+[package]
+name = "din-store-sqlite"
+version.workspace = true
+edition.workspace = true
+description = "SQLite-backed event store adapter for din-core"
+
+[dependencies]
+din-core = { path = "../din-core" }
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde_json = "1"

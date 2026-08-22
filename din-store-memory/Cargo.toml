@@ -1,0 +1,11 @@
+[package]
+name = "din-store-memory"
+version.workspace = true
+edition.workspace = true
+description = "In-memory event store adapter for din-core (tests / ephemeral nodes)"
+
+[dependencies]
+din-core = { path = "../din-core" }
+
+[dev-dependencies]
+serde_json = "1"
